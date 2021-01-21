@@ -1,31 +1,31 @@
 
 
-// first function
+ // first function
 
-// function kilometerToMeter(kilometer){
-//     var meter= kilometer*1000;
-//     return meter;
-// }
+    function kilometerToMeter(kilometer){
+        var meter= kilometer*1000;
+        return meter;
 
-
-//  second function
+    }
 
 
-// function budgetCalculator(watch,phone,laptop){
-//         var totalWatchPrice = watch * 50;
-//         var totalPhonePrice = phone * 100;
-//         var totalLaptopPrice = laptop * 500;
+ //  second function
 
-//         var total = totalWatchPrice + totalPhonePrice + totalLaptopPrice;
 
-//         return total;
-// }
-// var result = budgetCalculator(1,1,1);
-// console.log(result);
+    function budgetCalculator(watch,phone,laptop){
+        var totalWatchPrice = watch * 50;
+        var totalPhonePrice = phone * 100;
+        var totalLaptopPrice = laptop * 500;
 
-// third function
+        var total = totalWatchPrice + totalPhonePrice + totalLaptopPrice;
 
-function hotelCost(days){
+        return total ;
+    }
+
+
+// // third function
+
+    function hotelCost(days){
         var cost=0;
         if(days <= 10){
             cost=days*100;
@@ -39,8 +39,8 @@ function hotelCost(days){
         }
         else{
            var firstTenDays = 10 * 100;
-           var nextTendays = 10* 80;
-           var remaining= days-20;
+           var nextTendays = 10 * 80;
+           var remaining= days - 20;
 
            var extraDays= remaining * 50;
            cost = firstTenDays+nextTendays+extraDays;
@@ -48,7 +48,18 @@ function hotelCost(days){
         }
         return cost;
 
-}
+        }
 
-var result= hotelCost(21);
-console.log(result);
+
+
+ // forth function
+
+    function megaFriend(array){
+        mega="";
+        for(i = 0; i<array.length ; i++){
+            if(mega.length < array[i].length){
+            mega= array[i]
+        }
+     }
+        return mega;
+    }
