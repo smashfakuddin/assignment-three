@@ -48,7 +48,7 @@
         }
         return cost;
 
-        }
+    }
 
 
 
@@ -59,7 +59,7 @@
         for(i = 0; i<array.length ; i++){
             if(mega.length < array[i].length){
             mega= array[i]
+            }
         }
-     }
         return mega;
     }
