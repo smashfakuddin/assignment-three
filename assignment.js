@@ -1,15 +1,22 @@
+// https://github.com/smashfakuddin/assignment-three
 
 
  // first function
 
     function kilometerToMeter(kilometer){
-        var meter= kilometer*1000;
+        if(kilometer>=0){
+            var meter= kilometer*1000;
+        }
+        else{
+            console.log("distance cannot be negative");
+        }
+
         return meter;
 
     }
 
 
- //  second function
+  //  second function
 
 
     function budgetCalculator(watch,phone,laptop){
@@ -23,7 +30,7 @@
     }
 
 
-// // third function
+ // third function
 
     function hotelCost(days){
         var cost=0;
@@ -58,7 +65,7 @@
         mega="";
         for(i = 0; i<array.length ; i++){
             if(mega.length < array[i].length){
-            mega= array[i]
+            mega = array[i]
             }
         }
         return mega;
